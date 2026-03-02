@@ -4,14 +4,14 @@ export default function Navbar() {
     
 
     return(
-        <header className="z-10 fixed top-0 w-full py-4">
-            <nav className="flex justify-between border-b px-15 border-gray-700 bg-black">
+        <header className="z-10 fixed top-0 w-full py-4 bg-black" >
+            <nav className="flex justify-between border-b px-15 border-black">
 
                 <div className="flex justify-start items-center gap-3 py-4">
                     <h1 className="text-2xl font-bold text-white">Ayush Kumar</h1>
                 </div>
                 
-                <ul className="flex justify-center items-center gap-15  text-white">
+                <ul className="flex justify-center items-center gap-15 px-15 text-white outline-solid rounded-4xl">
                     <li>
                         <Hover isbutton={false} href="/" text="Home"></Hover></li>
                     <li>
