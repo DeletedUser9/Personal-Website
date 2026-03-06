@@ -1,16 +1,17 @@
-import React from 'react'
 import Link from 'next/link';
 
 type HoverProps = {
     href: string;
     text: string;
     isbutton: boolean;
+    classname?: string;
+    
     
 }
 
-export default function Hover( {href, text, isbutton}: HoverProps) {
+export default function Hover( {href, text, isbutton, classname}: HoverProps) {
 
-    const isbuttonclass = isbutton ? "text-green-300 outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white" : "hover:text-green-300";
+    const isbuttonclass = isbutton ? classname  : "hover:text-green-300";
     
   return (
     <div>

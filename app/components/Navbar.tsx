@@ -1,7 +1,6 @@
 import Hover from "./Hover";
 
 export default function Navbar() {
-    
 
     return(
         <header className="z-10 fixed top-0 w-full py-4 bg-black" >
@@ -22,8 +21,11 @@ export default function Navbar() {
                         <Hover isbutton={false} href="/contact" text="Contact"></Hover></li>
                 </ul>
                 <div className=" flex gap-5 py-4">
-                    <Hover isbutton={true} href="https://github.com/DeletedUser9" text="Github"></Hover>
-                    <Hover isbutton={true} href = "https://www.linkedin.com/in/ayush-kumar-2125b9294/" text="LinkedIn"></Hover>
+                    <Hover classname="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white"
+                    isbutton={true} href="https://github.com/DeletedUser9" text="Github"></Hover>
+                    <Hover 
+                    classname="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white" 
+                    isbutton={true} href = "https://www.linkedin.com/in/ayush-kumar-2125b9294/" text="LinkedIn"></Hover>
                 </div>
             </nav>
         </header>

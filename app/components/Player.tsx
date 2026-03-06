@@ -3,10 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 type Pos = { x: number; y: number };
+type PlayerProps = {
+  classname?: string;
+}
 
-export default function Player() {
+export default function Player({ classname }: PlayerProps) {
  
-  const [pos, setPos] = useState<Pos>({ x: 500, y: 200 });
+  const [pos, setPos] = useState<Pos>({ x: 300, y: 0 });
 
   
   const SPRITE_SIZE = 256;
@@ -92,7 +95,7 @@ export default function Player() {
   return (
     <div>
       <div
-        className="absolute h-64 w-64"
+        className={classname}
         style={{
           transform: `translate(${pos.x}px, ${pos.y}px)`,
           backgroundImage: "url(/player.gif)",
