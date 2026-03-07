@@ -54,16 +54,17 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  height: 20%;
+  height: 30%;
+  backdrop-filter: blur(4px);
   background: linear-gradient(
     to bottom,
-    transparent 0%,
-    rgba(0, 189, 29, 0.05) 45%,
+    transparent 80%,
+    rgba(57, 58, 57, 0.05) 45%,
     rgba(58, 189, 6, 0.12) 50%,
-    rgba(81, 255, 0, 0.05) 55%,
-    transparent 100%
+    rgba(51, 51, 50, 0.05) 55%,
+    transparent 20%
   );
-  animation: vhs-sweep 6s linear infinite;
+  animation: vhs-sweep 4s linear infinite;
 }
 
 @keyframes vhs-sweep2 {
@@ -74,20 +75,21 @@ body {
     transform: translateY(100vh);
   }
 }
-
 .vhs-sweep2::before {
   content: "";
   position: absolute;
   inset: 0;
-  height: 20%;
+  height: 30%;
+  backdrop-filter: blur(4px);
   background: linear-gradient(
     to bottom,
-    transparent 0%,
-    rgba(0, 189, 29, 0.05) 45%,
+    transparent 80%,
+    rgba(57, 58, 57, 0.05) 45%,
     rgba(58, 189, 6, 0.12) 50%,
-    rgba(81, 255, 0, 0.05) 55%,
-    transparent 100%
+    rgba(51, 51, 50, 0.05) 55%,
+    transparent 20%
   );
-  animation: vhs-sweep2 3s linear infinite;
+  animation: vhs-sweep2 6s linear infinite;
 }
 
+ 

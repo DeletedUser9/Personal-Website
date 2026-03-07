@@ -16,7 +16,7 @@ export default function Hero() {
         <Player classname="relative h-64 w-64 " />
 
          <div className="flex flex-col mt-10 items-start"> 
-            <span className="font-medium text-6xl uppercase md:text-7xl">Ayush</span>
+            <span className={`${pressStart2P.className} text-xl uppercase md:text-7xl`}>Ayush</span>
             <span className={`${pressStart2P.className} text-[60px] text-green-400 uppercase leading-none md:text-[120px]`}>Kumar</span>
             <p className="text-gray-300 text-lg md:text-2xl">Computer Science Student at University of Auckland</p>
             <div className="mt-5 flex justify-center gap-10">
