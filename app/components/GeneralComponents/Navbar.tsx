@@ -3,14 +3,14 @@ import Hover from "./Hover";
 export default function Navbar() {
 
     return(
-        <header className="z-10 fixed top-0 w-full py-4 bg-black" >
-            <nav className="flex justify-between border-b px-15 border-black">
+        <header className="z-10 fixed top-0 w-full py-4 backdrop-blur-lg bg-black/50" >
+            <nav className="flex justify-between border-b px-15 border-transparent">
 
                 <div className="flex justify-start items-center gap-3 py-4">
                     <h1 className="text-2xl font-bold text-white">Ayush Kumar</h1>
                 </div>
                 
-                <ul className="flex justify-center items-center gap-15 px-15 text-white outline-solid rounded-4xl">
+                <ul className="flex justify-center items-center gap-15 px-15 text-white outline-solid backdrop-blur-lg rounded-4xl">
                     <li>
                         <Hover isbutton={false} href="/" text="Home"></Hover></li>
                     <li>

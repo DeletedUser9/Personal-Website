@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Overlay from "./components/GeneralComponents/Overlay";
+import Navbar from "./components/GeneralComponents/Navbar";
 
 
 const geistSans = Geist({
@@ -31,6 +32,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Overlay />
+        
       </body>
     </html>
   );
