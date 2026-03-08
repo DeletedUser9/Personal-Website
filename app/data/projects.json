@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Nameless King",
+        "Stack": "GDScript - Godot - Aesprite",
+        "description": "A 2D topdown game we made during the GDG game dev event built using Godot. This is a story driven game you play as a forgotten nameless king taking back his kingdom with some time travel elements",
+        "repo": "https://github.com/Mad-Rat-Interactive/Nameless-King",
+        "live": "https://mad-rat-interactive.itch.io/nameless-king",
+        "image": "./namelessKing.png"
+
+
+    },
+    {
+        "name": "A knights tragedy",
+        "Stack": "GDScript - Godot - Aesprite",
+        "description": "A 2D platformer game we made during the GDG game with story elements",
+        "repo": "",
+        "live": "https://mad-rat-interactive.itch.io/a-knights-tragedy",
+        "image": "./knight.png"
+    }
+]
