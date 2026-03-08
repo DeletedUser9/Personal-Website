@@ -4,14 +4,14 @@ type HoverProps = {
     href: string;
     text: string;
     isbutton: boolean;
-    classname?: string;
+    className?: string;
     
     
 }
 
-export default function Hover( {href, text, isbutton, classname}: HoverProps) {
+export default function Hover( {href, text, isbutton, className}: HoverProps) {
 
-    const isbuttonclass = isbutton ? classname  : "hover:text-green-300";
+    const isbuttonclass = isbutton ? className  : "hover:text-green-300";
     
   return (
     <div>

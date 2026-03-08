@@ -4,7 +4,7 @@ export default function Navbar() {
 
     return(
         <header className="z-10 fixed top-0 w-full py-4 backdrop-blur-lg bg-black/50" >
-            <nav className="flex justify-between border-b px-15 border-transparent">
+            <nav className="hidden md:flex md:justify-between md:border-b md:px-15 md:border-transparent">
 
                 <div className="flex justify-start items-center gap-3 py-4">
                     <h1 className="text-2xl font-bold text-white">Ayush Kumar</h1>
@@ -21,10 +21,10 @@ export default function Navbar() {
                         <Hover isbutton={false} href="/contact" text="Contact"></Hover></li>
                 </ul>
                 <div className=" flex gap-5 py-4">
-                    <Hover classname="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white"
+                    <Hover className="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white"
                     isbutton={true} href="https://github.com/DeletedUser9" text="Github"></Hover>
                     <Hover 
-                    classname="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white" 
+                    className="outline-solid outline-green-300 text-white px-4 py-2 rounded-md hover:outline-white" 
                     isbutton={true} href = "https://www.linkedin.com/in/ayush-kumar-2125b9294/" text="LinkedIn"></Hover>
                 </div>
             </nav>
