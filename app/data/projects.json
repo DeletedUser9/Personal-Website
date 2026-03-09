@@ -14,5 +14,13 @@
         "repo": "",
         "live": "https://mad-rat-interactive.itch.io/a-knights-tragedy",
         "image": "/knight.png"
+    },
+    {
+        "name": "QR-Code app",
+        "description": "Created a QR-Code app on nextjs using front-end mentor",
+        "repo": "https://github.com/DeletedUser9/qr-code",
+        "live": "https://yushw.github.io/qr-code/",
+        "image": "/qr-code.png"
+
     }
 ]
