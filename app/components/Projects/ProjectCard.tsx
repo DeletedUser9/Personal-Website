@@ -31,10 +31,10 @@ export default function ProjectCard() {
               <Hover
                 text="View Project"
                 isbutton={true}
-                href={project.live}
+                href={project.live} 
                 className="text-black text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
               />
-              <Link href={project.repo}>
+              <Link href={project.repo} target="_blank" rel="noopener noreferrer">
                 <Image className="invert" src="/githubicon.svg" alt="GitHub" width={30} height={20} />
               </Link>
             </div>
