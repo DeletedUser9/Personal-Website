@@ -24,6 +24,7 @@ export default function Player({
   const [hint,showHint] = useState(true);
 
   const SPRITE_SIZE = 256;
+  const BOUNDS_SIZE = 180;
   const SPEED = 350;
 
   const playerRef = useRef<HTMLDivElement | null>(null);
@@ -46,10 +47,10 @@ export default function Player({
       const rect = parent.getBoundingClientRect();
 
       const newBounds = {
-        minX: 0,
-        minY: 0,
-        maxX: Math.max(0, rect.width - SPRITE_SIZE),
-        maxY: Math.max(0, rect.height - SPRITE_SIZE),
+        minX: 0 - 93,
+        minY: 0 - 76,
+        maxX: Math.max(0, rect.width - BOUNDS_SIZE),
+        maxY: Math.max(0, rect.height - BOUNDS_SIZE),
       };
 
       boundsRef.current = newBounds;
