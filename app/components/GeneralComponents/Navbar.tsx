@@ -7,21 +7,19 @@ export default function Navbar() {
 
     return(
         <header className="z-10 fixed top-0 w-full py-4 backdrop-blur-lg bg-black/50" >
-            <nav className="flex justify-between px-10 gap-5  md:justify-between md:border-b md:px-15 md:border-transparent">
+            <nav className="flex justify-between gap-5 md:border-b md:px-15 md:border-transparent">
 
                 <div className="md:flex md:justify-start md:items-center gap-3 py-4">
                     <Link href="/">
-                        <h1 className="pixel-font text-3xl text-white">AK</h1>
+                        <h1 className="pixel-font text-3xl px-7 text-white">AK</h1>
                     </Link>
                 </div>
                 
-                <ul className="hidden font-mono text-xl md:flex md:justify-center md:items-center md:gap-15 md:px-15 md:text-white ">
+                <ul className="hidden font-mono text-xl md:flex md:justify-center md:items-center md:gap-15 md:text-white ">
                     <li>
                         <Hover isbutton={false} href="#home" text="Home"></Hover></li>
                     <li>
                         <Hover isbutton={false} href="#projects" text="Projects"></Hover></li>
-                    <li>
-                        <Hover isbutton={false} href="#contact" text="Contact"></Hover></li>
                 </ul>
                 <div className="flex md:flex md:justify-end  gap-5 py-4">
                     <Link href="https://github.com/DeletedUser9" target="_blank" rel="noopener noreferrer">
