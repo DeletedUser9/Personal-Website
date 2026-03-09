@@ -1,6 +1,7 @@
 import projectData from '../../data/projects.json'
 import Image from 'next/image'
 import Hover from '../GeneralComponents/Hover'
+import Link from 'next/link'
 
 export default function ProjectCard() {
   return (
@@ -12,7 +13,6 @@ export default function ProjectCard() {
         >
           <div className="flex h-full flex-col items-center gap-4 text-center">
             <h3 className="text-2xl font-bold">{project.name}</h3>
-
             <Image
               src={project.image}
               alt={project.name}
@@ -20,18 +20,23 @@ export default function ProjectCard() {
               height={400}
               className="w-full rounded-xl object-cover"
             />
-
+            <p className='text-gray-300 font-bold'
+            >
+              {project.Stack}
+            </p>
             <p className="text-gray-300">
               {project.description}
             </p>
-
-            <div className="mt-auto pt-2">
+            <div className="flex gap-5 mt-auto pt-2">
               <Hover
                 text="View Project"
                 isbutton={true}
                 href={project.live}
                 className="text-black text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
               />
+              <Link href={project.repo}>
+                <Image className="invert" src="/githubicon.svg" alt="GitHub" width={30} height={20} />
+              </Link>
             </div>
           </div>
         </div>

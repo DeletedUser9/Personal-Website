@@ -17,6 +17,7 @@
     },
     {
         "name": "QR-Code app",
+        "Stack": "Nextjs - TypeScript - TailwindCSS",
         "description": "Created a QR-Code app on nextjs using front-end mentor",
         "repo": "https://github.com/DeletedUser9/qr-code",
         "live": "https://yushw.github.io/qr-code/",
