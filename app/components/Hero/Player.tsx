@@ -21,6 +21,7 @@ export default function Player({
   initialPos = { x: 80, y: 180 },
 }: PlayerProps) {
   const [pos, setPos] = useState<Pos>(initialPos);
+  const [hint,showHint] = useState(true);
 
   const SPRITE_SIZE = 256;
   const SPEED = 350;
@@ -78,6 +79,9 @@ export default function Player({
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       keysDown.current.add(e.code);
+      if (["KeyW", "KeyA", "KeyS", "KeyD"].includes(e.code)) {
+        showHint(false);
+  }
 
       if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(e.code)) {
         e.preventDefault();
@@ -155,6 +159,8 @@ export default function Player({
         imageRendering: "pixelated",
         willChange: "transform",
       }}
-    />
+    >{hint && 
+      <span>Press WASD to move</span>
+    }</div>
   );
 }
