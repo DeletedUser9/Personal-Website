@@ -12,15 +12,15 @@ export default function ProjectCard() {
           className="w-full rounded-2xl border border-white/20 bg-black/40 p-6 shadow-lg"
         >
           <div className="flex h-full flex-col items-center gap-4 text-center">
-            <h3 className="text-2xl font-bold">{project.name}</h3>
+            <h3 className="pixel-font text-2xl ">{project.name}</h3>
             <Image
               src={project.image}
               alt={project.name}
-              width={700}
-              height={400}
+              width={300}
+              height={250}
               className="w-full rounded-xl object-cover"
             />
-            <p className='text-gray-300 font-bold'
+            <p className='text-green-300 font-bold'
             >
               {project.Stack}
             </p>

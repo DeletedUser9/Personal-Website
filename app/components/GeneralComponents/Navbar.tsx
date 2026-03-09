@@ -2,6 +2,7 @@ import Link from "next/link";
 import Hover from "./Hover";
 import Image from "next/image";
 
+
 export default function Navbar() {
 
     return(
@@ -10,13 +11,13 @@ export default function Navbar() {
 
                 <div className="md:flex md:justify-start md:items-center gap-3 py-4">
                     <Link href="/">
-                        <h1 className="text-3xl font-mono text-white">Ayush Kumar</h1>
+                        <h1 className="pixel-font text-3xl text-white">AK</h1>
                     </Link>
                 </div>
                 
-                <ul className="hidden md:flex md:justify-center md:items-center md:gap-15 md:px-15 md:text-white md:outline-solid md:backdrop-blur-lg md:rounded-4xl">
+                <ul className="hidden font-mono text-xl md:flex md:justify-center md:items-center md:gap-15 md:px-15 md:text-white ">
                     <li>
-                        <Hover isbutton={false} href="/" text="Home"></Hover></li>
+                        <Hover isbutton={false} href="#home" text="Home"></Hover></li>
                     <li>
                         <Hover isbutton={false} href="#about" text="About"></Hover></li>
                     <li>

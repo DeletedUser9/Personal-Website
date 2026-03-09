@@ -92,4 +92,8 @@ body {
   animation: vhs-sweep2 6s linear infinite;
 }
 
+.pixel-font{
+  font-family: var(--font-press-start), monospace;
+}
+
  
