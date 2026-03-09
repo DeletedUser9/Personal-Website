@@ -19,8 +19,6 @@ export default function Navbar() {
                     <li>
                         <Hover isbutton={false} href="#home" text="Home"></Hover></li>
                     <li>
-                        <Hover isbutton={false} href="#about" text="About"></Hover></li>
-                    <li>
                         <Hover isbutton={false} href="#projects" text="Projects"></Hover></li>
                     <li>
                         <Hover isbutton={false} href="#contact" text="Contact"></Hover></li>

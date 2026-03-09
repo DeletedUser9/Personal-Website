@@ -10,7 +10,7 @@ export default function HeroText() {
             <p className="text-lg text-center font-mono md:block md:text-2xl md:text-gray-300">Computer Science Student at University of Auckland</p>
             <div className="mt-5 flex-row md:flex md:justify-center md:gap-10">
 
-              <Hover className = "inline-flex py-5 md:py-2 w-45 md:min-w-45 text-black font-mono text-2xl bg-green-400 px-4 rounded-md hover:bg-green-500" isbutton = {true}   
+              <Hover className = "inline-flex justify-center py-5 md:py-2 w-45 md:min-w-45 text-black font-mono text-2xl bg-green-400 px-4 rounded-md hover:bg-green-500" isbutton = {true}   
               href="/about" text="Learn More"></Hover>
               <Hover className = "hidden md:inline-flex md:min-w-45 text-2xl outline-solid justify-center outline-green-300 text-white px-4 md:py-2 rounded-md hover:outline-white" 
               isbutton={true} href="#projects" text="Projects"></Hover>
