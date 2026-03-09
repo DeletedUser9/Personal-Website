@@ -10,7 +10,7 @@ export default function Navbar() {
 
                 <div className="md:flex md:justify-start md:items-center gap-3 py-4">
                     <Link href="/">
-                        <h1 className="text-2xl font-bold text-white">Ayush Kumar</h1>
+                        <h1 className="text-3xl font-mono text-white">Ayush Kumar</h1>
                     </Link>
                 </div>
                 
@@ -20,9 +20,9 @@ export default function Navbar() {
                     <li>
                         <Hover isbutton={false} href="#about" text="About"></Hover></li>
                     <li>
-                        <Hover isbutton={false} href="/projects" text="Projects"></Hover></li>
+                        <Hover isbutton={false} href="#projects" text="Projects"></Hover></li>
                     <li>
-                        <Hover isbutton={false} href="/contact" text="Contact"></Hover></li>
+                        <Hover isbutton={false} href="#contact" text="Contact"></Hover></li>
                 </ul>
                 <div className="flex md:flex md:justify-end  gap-5 py-4">
                     <Link href="https://github.com/DeletedUser9" target="_blank" rel="noopener noreferrer">
