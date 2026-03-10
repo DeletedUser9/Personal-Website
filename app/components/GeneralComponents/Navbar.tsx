@@ -21,7 +21,7 @@ export default function Navbar() {
                     <li>
                         <Hover isbutton={false} href="#projects" text="Projects"></Hover></li>
                 </ul>
-                <div className="flex md:flex md:justify-end  gap-5 py-4">
+                <div className="flex md:flex md:justify-end m-3 gap-5">
                     <Link href="https://github.com/DeletedUser9" target="_blank" rel="noopener noreferrer">
                         <Image className="invert" src="/githubicon.svg" alt="GitHub" width={50} height={30} />
                     </Link>

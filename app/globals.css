@@ -96,4 +96,12 @@ body {
   font-family: var(--font-press-start), monospace;
 }
 
+@media (max-width: 768px) {
+  .vhs-sweep::before,
+  .vhs-sweep2::before {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
  
