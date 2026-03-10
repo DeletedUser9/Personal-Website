@@ -50,7 +50,7 @@ export default function Player({
         minX: 0 - 93,
         minY: 0 - 76,
         maxX: Math.max(0, rect.width - BOUNDS_SIZE),
-        maxY: Math.max(0, rect.height - BOUNDS_SIZE),
+        maxY: Math.max(0, rect.height +9 - BOUNDS_SIZE),
       };
 
       boundsRef.current = newBounds;
