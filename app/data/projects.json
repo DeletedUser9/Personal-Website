@@ -16,11 +16,11 @@
         "image": "/knight.png"
     },
     {
-        "name": "QR-Code app",
-        "Stack": "Nextjs - TypeScript - TailwindCSS",
-        "description": "Created a QR-Code app on nextjs using front-end mentor",
-        "repo": "https://github.com/DeletedUser9/qr-code",
-        "live": "https://yushw.github.io/qr-code/",
+        "name": "QR Code Generator",
+        "Stack": "Nextjs - TypeScript - TailwindCSS - Python - Flask",
+        "description": "Created a QR-Code generator app using nextjs and tailwindcss as its frontend. The backend is created in a python web service deployed on render which handes the requests",
+        "repo": "https://github.com/DeletedUser9/qrcode-generator",
+        "live": "https://yushqrcode.vercel.app/",
         "image": "/qr-code.png"
 
     }
