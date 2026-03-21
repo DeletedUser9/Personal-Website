@@ -10,9 +10,9 @@ export default function Navbar() {
             <nav className="flex justify-between gap-5 md:border-b md:px-15 md:border-transparent">
 
                 <div className="md:flex md:justify-start md:items-center gap-3 py-4">
-                    <Link href="/">
+                    <a href="/">
                         <h1 className="pixel-font text-3xl px-7 text-white">AK</h1>
-                    </Link>
+                    </a>
                 </div>
                 
                 <ul className="hidden font-mono text-xl md:flex md:justify-center md:items-center md:gap-15 md:text-white ">
