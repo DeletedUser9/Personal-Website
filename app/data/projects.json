@@ -8,7 +8,7 @@
         "image": "/namelessKing.png"
     },
     {
-        "name": "A knights tragedy",
+        "name": "A Knights Tragedy",
         "Stack": "GDScript - Godot - Aesprite",
         "description": "A 2D platformer game we made during the GDG game with story elements",
         "repo": "",
@@ -22,6 +22,15 @@
         "repo": "https://github.com/DeletedUser9/qrcode-generator",
         "live": "https://yushqrcode.vercel.app/",
         "image": "/qr-code.png"
+
+    },
+    {
+        "name": "Personal Website",
+        "Stack": "Nextjs - TypeScript - TailwindCSS",
+        "description": "You're on it :D",
+        "repo": "https://github.com/DeletedUser9/Personal-Website",
+        "live": "https://deleteduser9.vercel.app/",
+        "image": "/personal.gif"
 
     }
 ]

@@ -13,13 +13,13 @@ export default function ProjectCard() {
         >
           <div className="flex h-full flex-col items-center gap-4 text-center">
             <h3 className="pixel-font text-lg py-5 ">{project.name}</h3>
-            <Image
+            <Link href={project.live}><Image
               src={project.image}
               alt={project.name}
               width={500}
               height={250}
               className="rounded-xl object-cover"
-            />
+            /></Link> 
             <p className='text-green-300 font-bold'
             >
               {project.Stack}
