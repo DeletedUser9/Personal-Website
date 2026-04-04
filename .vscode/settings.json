@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Personal-Website"
+    "liveServer.settings.multiRootWorkspaceName": "Personal-Website",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
 }

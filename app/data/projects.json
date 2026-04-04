@@ -22,7 +22,6 @@
         "repo": "https://github.com/DeletedUser9/qrcode-generator",
         "live": "https://yushqrcode.vercel.app/",
         "image": "/qr-code.png"
-
     },
     {
         "name": "Personal Website",
@@ -31,6 +30,5 @@
         "repo": "https://github.com/DeletedUser9/Personal-Website",
         "live": "https://deleteduser9.vercel.app/",
         "image": "/personal.gif"
-
     }
 ]

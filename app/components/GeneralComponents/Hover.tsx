@@ -1,22 +1,22 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 type HoverProps = {
-    href: string;
-    text: string;
-    isbutton: boolean;
-    className?: string;
-    download?: string
-    
-    
-}
+  href: string;
+  text: string;
+  isbutton: boolean;
+  className?: string;
+  download?: string;
+};
 
-export default function Hover( {href, text, isbutton, className, download}: HoverProps) {
+export default function Hover(
+  props: HoverProps) {
+  const isbuttonclass = props.isbutton ? props.className : "hover:text-green-300";
 
-    const isbuttonclass = isbutton ? className  : "hover:text-green-300";
-    
   return (
     <div>
-      <Link className={isbuttonclass} download={download} href={href}>{text}</Link>
+      <Link className={isbuttonclass} download={props.download} href={props.href}>
+        {props.text}
+      </Link>
     </div>
-  )
+  );
 }

@@ -21,7 +21,7 @@ export default function Player({
   initialPos = { x: 80, y: 180 },
 }: PlayerProps) {
   const [pos, setPos] = useState<Pos>(initialPos);
-  const [hint,showHint] = useState(true);
+  const [hint, showHint] = useState(true);
 
   const SPRITE_SIZE = 256;
   const BOUNDS_SIZE = 180;
@@ -50,7 +50,7 @@ export default function Player({
         minX: 0 - 93,
         minY: 0 - 76,
         maxX: Math.max(0, rect.width - BOUNDS_SIZE),
-        maxY: Math.max(0, rect.height +9 - BOUNDS_SIZE),
+        maxY: Math.max(0, rect.height + 9 - BOUNDS_SIZE),
       };
 
       boundsRef.current = newBounds;
@@ -82,9 +82,13 @@ export default function Player({
       keysDown.current.add(e.code);
       if (["KeyW", "KeyA", "KeyS", "KeyD"].includes(e.code)) {
         showHint(false);
-  }
+      }
 
-      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(e.code)) {
+      if (
+        ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(
+          e.code,
+        )
+      ) {
         e.preventDefault();
       }
     };
@@ -160,8 +164,8 @@ export default function Player({
         imageRendering: "pixelated",
         willChange: "transform",
       }}
-    >{hint && 
-      <span>Press WASD to move</span>
-    }</div>
+    >
+      {hint && <span>Press WASD to move</span>}
+    </div>
   );
 }

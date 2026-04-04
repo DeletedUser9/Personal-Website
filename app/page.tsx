@@ -8,7 +8,7 @@ export default function Home() {
       <section className="lg:w-full md:h-screen">
         <Hero />
       </section>
-      <section id = "projects">
+      <section id="projects">
         <Projects />
       </section>
     </main>
