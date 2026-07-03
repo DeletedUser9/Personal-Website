@@ -4,6 +4,7 @@ import { pressStart2P } from "../lib/fonts";
 import "./globals.css";
 import Overlay from "./components/GeneralComponents/Overlay";
 import Navbar from "./components/GeneralComponents/Navbar";
+import SmoothScroll from "./components/GeneralComponents/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,11 @@ export default function RootLayout({
       className={`${pressStart2P.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
       <body>
-        <Navbar />
-        {children}
-        <Overlay />
+        <SmoothScroll>
+          <Navbar />
+          {children}
+          <Overlay />
+        </SmoothScroll>
       </body>
     </html>
   );
