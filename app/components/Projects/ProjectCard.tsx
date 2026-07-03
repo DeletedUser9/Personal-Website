@@ -13,12 +13,14 @@ export default function ProjectCard() {
         >
           <div className="flex h-full flex-col items-center gap-4 text-center">
             <h3 className="pixel-font text-lg py-5 ">{project.name}</h3>
-            <Link href={project.live}>
+            <Link
+              href={project.live}
+              className="relative w-full aspect-video overflow-hidden rounded-xl block"
+            >
               <Image
                 src={project.image}
                 alt={project.name}
-                width={500}
-                height={250}
+                fill
                 className="rounded-xl object-cover"
               />
             </Link>
@@ -31,19 +33,21 @@ export default function ProjectCard() {
                 href={project.live}
                 className="text-black text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
               />
-              <Link
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="invert"
-                  src="/githubicon.svg"
-                  alt="GitHub"
-                  width={30}
-                  height={20}
-                />
-              </Link>
+              {project.repo && (
+                <Link
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="invert"
+                    src="/githubicon.svg"
+                    alt="GitHub"
+                    width={30}
+                    height={20}
+                  />
+                </Link>
+              )}
             </div>
           </div>
         </div>
