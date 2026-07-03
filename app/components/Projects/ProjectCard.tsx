@@ -5,14 +5,16 @@ import Link from "next/link";
 
 export default function ProjectCard() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
       {projectData.map((project) => (
         <div
           key={project.name}
-          className="w-full rounded-2xl border border-white/20 bg-black/40 p-6 shadow-lg"
+          className="w-full rounded-2xl border border-white/20 bg-black/40 p-4 sm:p-6 shadow-lg"
         >
           <div className="flex h-full flex-col items-center gap-4 text-center">
-            <h3 className="pixel-font text-lg py-5 ">{project.name}</h3>
+            <h3 className="pixel-font text-base sm:text-lg py-4 sm:py-5">
+              {project.name}
+            </h3>
             <Link
               href={project.live}
               className="relative w-full aspect-video overflow-hidden rounded-xl block"
@@ -21,17 +23,22 @@ export default function ProjectCard() {
                 src={project.image}
                 alt={project.name}
                 fill
-                className="rounded-xl object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="rounded-xl object-cover transition-all duration-300 hover:scale-102"
               />
             </Link>
-            <p className="text-green-300 font-bold">{project.Stack}</p>
-            <p className="text-gray-300">{project.description}</p>
-            <div className="flex gap-5 mt-auto pt-2">
+            <p className="text-green-300 font-bold text-sm sm:text-base">
+              {project.Stack}
+            </p>
+            <p className="text-gray-300 text-sm sm:text-base">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mt-auto pt-2">
               <Hover
                 text="View Project"
                 isbutton={true}
                 href={project.live}
-                className="text-black text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
+                className="text-black text-base sm:text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
               />
               {project.repo && (
                 <Link
