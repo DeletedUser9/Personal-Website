@@ -8,10 +8,16 @@
         "image": "/namelessKing.png"
     },
     {
+        "name": "The Human Nutrition Unit",
+        "Stack": "Nextjs - TypeScript - TailwindCSS - PayloadCms - PostgressSQL",
+        "description": "Part of a team of six developers building a user-facing website for a University of Auckland research institute.",
+        "live": "https://hnu-uoa.vercel.app/",
+        "image": "/hnu.png"
+    },
+    {
         "name": "A Knights Tragedy",
         "Stack": "GDScript - Godot - Aesprite",
         "description": "A 2D platformer game we made during the GDG game with story elements",
-        "repo": "",
         "live": "https://mad-rat-interactive.itch.io/a-knights-tragedy",
         "image": "/knight.png"
     },
@@ -29,6 +35,6 @@
         "description": "You're on it :D",
         "repo": "https://github.com/DeletedUser9/Personal-Website",
         "live": "https://deleteduser9.vercel.app/",
-        "image": "/personal.gif"
+        "image": "/personal.png"
     }
 ]
