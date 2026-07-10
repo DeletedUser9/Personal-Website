@@ -28,13 +28,5 @@
         "repo": "https://github.com/DeletedUser9/qrcode-generator",
         "live": "https://yushqrcode.vercel.app/",
         "image": "/qr-code.png"
-    },
-    {
-        "name": "Personal Website",
-        "Stack": "Nextjs - TypeScript - TailwindCSS",
-        "description": "You're on it :D",
-        "repo": "https://github.com/DeletedUser9/Personal-Website",
-        "live": "https://deleteduser9.vercel.app/",
-        "image": "/personal.png"
     }
 ]

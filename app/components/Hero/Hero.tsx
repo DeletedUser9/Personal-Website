@@ -3,7 +3,7 @@ import HeroText from "./HeroText";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden mt-10 w-full h-svh lg:w-full flex justify-center px-4 md:px-15 rounded-3xl border bg-white/5 min-h-80 md:min-h-105 md:max-h-180">
+    <section className="relative overflow-hidden mt-10 w-full h-svh lg:w-full flex justify-center px-4 md:px-15 rounded-3xl border bg-white/5 min-h-80 md:min-h-105 md:h-[calc(100svh-9.5rem)]">
       <Player
         classname="relative h-64 w-64 hidden lg:block pixel-font text-xs py-10 px-5 text-green-300 text-center"
         initialPos={{ x: 0, y: 0 }}
