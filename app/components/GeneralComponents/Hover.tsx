@@ -9,6 +9,8 @@ type HoverProps = {
   isbutton: boolean;
   className?: string;
   download?: string;
+  playerTarget?: boolean;
+  playerLabel?: string;
 };
 
 export default function Hover(props: HoverProps) {
@@ -18,6 +20,10 @@ export default function Hover(props: HoverProps) {
     : "hover:text-green-300";
 
   const isHashLink = props.href.startsWith("#");
+
+  const targetAttrs = props.playerTarget
+    ? { "data-player-target": "true", "data-player-label": props.playerLabel }
+    : {};
 
   return (
     <div>
@@ -29,6 +35,7 @@ export default function Hover(props: HoverProps) {
             e.preventDefault();
             lenis?.scrollTo(props.href);
           }}
+          {...targetAttrs}
         >
           {props.text}
         </a>
@@ -37,6 +44,7 @@ export default function Hover(props: HoverProps) {
           className={isbuttonclass}
           download={props.download}
           href={props.href}
+          {...targetAttrs}
         >
           {props.text}
         </Link>

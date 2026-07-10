@@ -26,11 +26,16 @@ export default function Player({
   const SPRITE_SIZE = 256;
   const BOUNDS_SIZE = 180;
   const SPEED = 350;
+  const SPRITE_LEFT = 0.375;
+  const SPRITE_RIGHT = 0.672;
+  const SPRITE_TOP = 0.3125;
+  const SPRITE_BOTTOM = 0.656; // half-size of the interaction hitbox around the sprite centre
 
   const playerRef = useRef<HTMLDivElement | null>(null);
   const keysDown = useRef<Set<string>>(new Set());
   const rafId = useRef<number | null>(null);
   const lastTime = useRef<number | null>(null);
+  const nearTargetRef = useRef<HTMLElement | null>(null);
 
   const boundsRef = useRef<Bounds>({
     minX: 0,
@@ -84,6 +89,14 @@ export default function Player({
         showHint(false);
       }
 
+      if (e.code === "KeyE") {
+        const target = nearTargetRef.current;
+        if (target) {
+          e.preventDefault();
+          target.click();
+        }
+      }
+
       if (
         ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(
           e.code,
@@ -99,6 +112,40 @@ export default function Player({
 
     window.addEventListener("keydown", onKeyDown, { passive: false });
     window.addEventListener("keyup", onKeyUp);
+
+    const detectTarget = () => {
+      const el = playerRef.current;
+      if (!el) return;
+
+      const pr = el.getBoundingClientRect();
+      const hit = {
+        left: pr.left + pr.width * SPRITE_LEFT,
+        right: pr.left + pr.width * SPRITE_RIGHT,
+        top: pr.top + pr.height * SPRITE_TOP,
+        bottom: pr.top + pr.height * SPRITE_BOTTOM,
+      };
+
+      const targets = document.querySelectorAll<HTMLElement>(
+        "[data-player-target]",
+      );
+
+      let found: HTMLElement | null = null;
+      for (const t of Array.from(targets)) {
+        const r = t.getBoundingClientRect();
+        const overlap =
+          hit.left < r.right &&
+          hit.right > r.left &&
+          hit.top < r.bottom &&
+          hit.bottom > r.top;
+        if (overlap) found = t;
+      }
+
+      if (found !== nearTargetRef.current) {
+        nearTargetRef.current?.removeAttribute("data-player-active");
+        found?.setAttribute("data-player-active", "");
+        nearTargetRef.current = found;
+      }
+    };
 
     const tick = (t: number) => {
       if (lastTime.current == null) lastTime.current = t;
@@ -135,6 +182,8 @@ export default function Player({
         });
       }
 
+      detectTarget();
+
       rafId.current = requestAnimationFrame(tick);
     };
 
@@ -165,7 +214,12 @@ export default function Player({
         willChange: "transform",
       }}
     >
-      {hint && <span>Press WASD to move</span>}
+      {hint && (
+        <span>
+          Press <span className="text-amber-50">WASD</span> to move &{" "}
+          <span className="text-amber-50">E</span> to interact
+        </span>
+      )}
     </div>
   );
 }
