@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <header className="z-10 fixed top-0 w-full py-4 backdrop-blur-lg bg-black/50">
-      <nav className="flex justify-between gap-5 m-5 md:border-b md:px-15 md:border-transparent">
+      <nav className="flex justify-between gap-5 m-3 md:border-b md:px-15 md:border-transparent">
         <div className="md:flex md:justify-start md:items-center gap-3 py-4">
           <a href="/">
             <h1 className="pixel-font text-3xl px-7 text-white">AK</h1>
