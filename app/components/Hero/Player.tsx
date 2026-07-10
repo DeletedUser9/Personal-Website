@@ -26,7 +26,10 @@ export default function Player({
   const SPRITE_SIZE = 256;
   const BOUNDS_SIZE = 180;
   const SPEED = 350;
-  const HIT = 70; // half-size of the interaction hitbox around the sprite centre
+  const SPRITE_LEFT = 0.375;
+  const SPRITE_RIGHT = 0.672;
+  const SPRITE_TOP = 0.3125;
+  const SPRITE_BOTTOM = 0.656; // half-size of the interaction hitbox around the sprite centre
 
   const playerRef = useRef<HTMLDivElement | null>(null);
   const keysDown = useRef<Set<string>>(new Set());
@@ -115,13 +118,11 @@ export default function Player({
       if (!el) return;
 
       const pr = el.getBoundingClientRect();
-      const cx = pr.left + pr.width / 2;
-      const cy = pr.top + pr.height / 2;
       const hit = {
-        left: cx - HIT,
-        right: cx + HIT,
-        top: cy - HIT,
-        bottom: cy + HIT,
+        left: pr.left + pr.width * SPRITE_LEFT,
+        right: pr.left + pr.width * SPRITE_RIGHT,
+        top: pr.top + pr.height * SPRITE_TOP,
+        bottom: pr.top + pr.height * SPRITE_BOTTOM,
       };
 
       const targets = document.querySelectorAll<HTMLElement>(
