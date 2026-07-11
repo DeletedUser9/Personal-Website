@@ -10,7 +10,7 @@
     {
         "name": "The Human Nutrition Unit",
         "Stack": "Nextjs - TypeScript - React - TailwindCSS - PayloadCms - PostgresSQL",
-        "description": "Part of a team of six developers building a user-facing website for a University of Auckland research institute.",
+        "description": "The Human Nutrition Unit is a nutrition research centre at the University of Auckland, conducting clinical studies to improve health outcomes through evidence-based research. This project redesigned HNU's website into a modern, responsive platform with an integrated content management system, making it easier for participants to discover studies and staff to manage website content independently.",
         "live": "https://hnu-uoa.vercel.app/",
         "image": "/hnu.png"
     },
