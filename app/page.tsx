@@ -21,10 +21,10 @@ export default function Home() {
             <Projects />
           </section>
         </Reveal>
+        <Reveal className="w-full">
+          <Footer />
+        </Reveal>
       </main>
-      <Reveal className="w-full">
-        <Footer />
-      </Reveal>
     </>
   );
 }
