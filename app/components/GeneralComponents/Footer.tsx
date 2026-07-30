@@ -5,10 +5,10 @@ import { Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t border-white/20 py-6">
-      <section className="flex justify-between items-center">
-        <div>Ayush Kumar</div>
+      <section className="flex justify-center md:justify-between md:items-center">
+        <div className="hidden sm:block">Ayush Kumar</div>
         <div>
-          <ul className="flex gap-5">
+          <ul className="flex gap-10 md:gap-5">
             <li className="flex gap-2">
               <Image
                 className="px-0"
