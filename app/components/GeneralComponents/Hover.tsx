@@ -9,6 +9,7 @@ type HoverProps = {
   isbutton: boolean;
   className?: string;
   download?: string;
+  newTab?: boolean;
   playerTarget?: boolean;
   playerLabel?: string;
 };
@@ -23,6 +24,9 @@ export default function Hover(props: HoverProps) {
 
   const targetAttrs = props.playerTarget
     ? { "data-player-target": "true", "data-player-label": props.playerLabel }
+    : {};
+  const newTabAttrs = props.newTab
+    ? { target: "_blank", rel: "noopener noreferrer" }
     : {};
 
   return (
@@ -44,6 +48,7 @@ export default function Hover(props: HoverProps) {
           className={isbuttonclass}
           download={props.download}
           href={props.href}
+          {...newTabAttrs}
           {...targetAttrs}
         >
           {props.text}

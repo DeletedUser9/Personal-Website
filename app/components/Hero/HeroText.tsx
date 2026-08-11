@@ -16,10 +16,10 @@ export default function HeroText() {
         <Hover
           className="inline-flex justify-center py-5 md:py-2 w-45 md:min-w-45 text-black font-mono text-2xl bg-green-400 px-4 rounded-md hover:bg-green-500 data-player-active:bg-green-500"
           isbutton={true}
-          href="/_CV - final.pdf"
-          download="_CV - final.pdf"
-          text="Download CV"
+          href="/resume.pdf"
+          text="View CV"
           playerTarget
+          newTab
           playerLabel="download CV"
         ></Hover>
         <Hover

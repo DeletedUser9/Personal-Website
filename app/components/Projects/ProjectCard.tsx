@@ -18,6 +18,7 @@ export default function ProjectCard() {
             <Link
               href={project.live}
               className="relative w-full aspect-video overflow-hidden rounded-xl block"
+              target="_blank"
             >
               <Image
                 src={project.image}
@@ -36,6 +37,7 @@ export default function ProjectCard() {
             <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mt-auto pt-2">
               <Hover
                 text="View Project"
+                newTab
                 isbutton={true}
                 href={project.live}
                 className="text-black text-base sm:text-lg bg-green-400 px-4 py-2 rounded-md hover:bg-green-500"
