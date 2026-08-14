@@ -23,13 +23,6 @@
         "image": "/aucc.png"
     },
     {
-        "name": "A Knights Tragedy",
-        "Stack": "GDScript - Godot - Aesprite",
-        "description": "A 2D platformer game we made during the GDG game with story elements",
-        "live": "https://mad-rat-interactive.itch.io/a-knights-tragedy",
-        "image": "/knight.png"
-    },
-    {
         "name": "QR Code Generator",
         "Stack": "Nextjs - TypeScript - TailwindCSS - Python - Flask",
         "description": "Created a QR-Code generator app using nextjs and tailwindcss as its frontend. The backend is created in a python web service deployed on render which handes the requests",
