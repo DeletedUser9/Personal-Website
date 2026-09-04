@@ -24,6 +24,7 @@ export default function ProjectCard() {
                 src={project.image}
                 alt={project.name}
                 fill
+                unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="rounded-xl object-cover transition-all duration-300 hover:scale-102"
               />
