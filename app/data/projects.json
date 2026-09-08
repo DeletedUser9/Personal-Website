@@ -10,6 +10,7 @@
     {
         "name": "The Human Nutrition Unit",
         "Stack": "Nextjs - TypeScript - React - TailwindCSS - PayloadCMS - PostgresSQL",
+        "repo": "https://github.com/uoa-compsci399-s1-2026/capstone-project-s1-2026-team-7",
         "description": "The Human Nutrition Unit is a nutrition research centre at the University of Auckland, conducting clinical studies to improve health outcomes through evidence-based research. This project redesigned HNU's website into a modern, responsive platform with an integrated content management system, making it easier for participants to discover studies and staff to manage website content independently.",
         "live": "https://www.capitalise.space/projects/6a44d62d040af2a0b4341c4f",
         "image": "/hnu.png"
