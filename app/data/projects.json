@@ -8,6 +8,14 @@
         "image": "/namelessKing.gif"
     },
     {
+        "name": "Auckland Uni Esports Club",
+        "Stack": "Nextjs - TypeScript - React - TailwindCSS - Prisma",
+        "description": "Worked in a team of devs to develop the website for AUEC",
+        "live": "https://auec.club",
+        "repo": "https://github.com/AucklandUniEsports/AUEC-Website",
+        "image": "/auec-hero.gif"
+    },
+    {
         "name": "The Human Nutrition Unit",
         "Stack": "Nextjs - TypeScript - React - TailwindCSS - PayloadCMS - PostgresSQL",
         "repo": "https://github.com/uoa-compsci399-s1-2026/capstone-project-s1-2026-team-7",
