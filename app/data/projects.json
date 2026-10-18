@@ -13,7 +13,8 @@
         "description": "Worked in a team of devs to develop the website for AUEC",
         "live": "https://auec.club",
         "repo": "https://github.com/AucklandUniEsports/AUEC-Website",
-        "image": "/auec-hero.gif"
+        "image": "/auec-hero.gif",
+        "imagePosition": "left center"
     },
     {
         "name": "The Human Nutrition Unit",

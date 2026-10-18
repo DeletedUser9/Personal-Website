@@ -26,6 +26,10 @@ export default function ProjectCard() {
                 fill
                 unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{
+                  objectPosition:
+                    "imagePosition" in project ? project.imagePosition : undefined,
+                }}
                 className="rounded-xl object-cover transition-all duration-300 hover:scale-102"
               />
             </Link>
